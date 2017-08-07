@@ -21,6 +21,6 @@ class GoogleApi():
         return self.request.get(url, None, payload, None)
 
     def return_url(self):
-        url = 'https://lineparty-api.line-apps-rc.com/v1/beacon/'
+        url = 'https://www.googleapis.com/customsearch/v1'
 
         return url
