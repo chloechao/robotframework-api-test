@@ -8,3 +8,8 @@ User Sends A GET Request To Search ${keyword}
 
 Response Contains Web Url ${web_url}
     Log    ${web_url}
+
+Log The Url
+    ${res} =    Get Url
+    Log    ${res}
+    Log Variables

@@ -20,12 +20,7 @@ class GoogleApi():
         }
         return self.request.get(url, None, payload, None)
 
-    def delete_agency(self, agency_id):
-        url = 'https://lineparty-api.line-apps-rc.com/v1/agency/{_id}'.format(_id=agency_id)
+    def return_url(self):
+        url = 'https://lineparty-api.line-apps-rc.com/v1/beacon/'
 
-        return self.request.delete(url)
-
-    def delete_beacon(self, beacon_id):
-        url = 'https://lineparty-api.line-apps-rc.com/v1/beacon/{_id}'.format(_id=beacon_id)
-
-        return self.request.delete(url)
+        return url
